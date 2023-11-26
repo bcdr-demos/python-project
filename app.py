@@ -7,15 +7,16 @@ app = Flask(__name__)
 HTML_TEMPLATE = '''
 <!doctype html>
 <html>
-<head><title>Data Processor</title></head>
+<head><title>PandaMuncher 🐼🍽️</title></head>
 <body>
-  <h1>Data Processor</h1>
+  <h1>Welcome to PandaMuncher! 🐼</h1>
+  <p>Feed me some data, and watch me munch through it! 📊🍽️</p>
   <form method="post">
     <textarea name="data" rows="10" cols="50">{{ data }}</textarea><br>
-    <input type="submit" value="Process Data">
+    <input type="submit" value="Munch Data 🍪">
   </form>
   {% if result %}
-    <h2>Result:</h2>
+    <h2>Munched Result: 📈</h2>
     <p>{{ result }}</p>
   {% endif %}
 </body>
@@ -30,7 +31,7 @@ def index():
     if request.method == 'POST':
         data = request.form['data']
         df = pd.read_csv(io.StringIO(data))
-        result = f"Mean of column 'B': {df['B'].mean()}"
+        result = f"Mean of column 'B': {df['B'].mean()} 🧮"
 
     return render_template_string(HTML_TEMPLATE, data=initial_data, result=result)
 
