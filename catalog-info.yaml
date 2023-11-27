@@ -4,12 +4,24 @@ metadata:
   name: python-project
   annotations:
     github.com/project-slug: bcdr-demos/python-project
-    coder.com/template: "devcontainers"
-    coder.com/parameter/repo: "custom"
-    coder.com/parameter/repo_url: "https://github.com/bcdr-demos/python-project"
-    coder.com/parameter/region: "us-pittsburgh"
-    coder.com/create-mode: "auto"
+    # coder.com/template: "devcontainers"
+    # coder.com/parameter/repo: "custom"
+    # coder.com/parameter/repo_url: "https://github.com/bcdr-demos/python-project"
+    # coder.com/parameter/region: "us-Pittsburgh"
+    # coder.com/create-mode: "auto"
 spec:
   type: other
   lifecycle: unknown
   owner: pm
+spec:
+  type: other
+  lifecycle: unknown
+  owner: pm
+  coder:
+    template: "devcontainers"
+    createMode: "auto"
+    params:
+      repo: "custom"
+      repoUrl: "https://github.com/bcdr-demos/python-project"
+      region: "us-pittsburgh"
+
