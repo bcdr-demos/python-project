@@ -13,10 +13,6 @@ spec:
   type: other
   lifecycle: unknown
   owner: pm
-spec:
-  type: other
-  lifecycle: unknown
-  owner: pm
   coder:
     template: "devcontainers"
     createMode: "auto"
