@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: python-project
+  annotations:
+    github.com/project-slug: bcdr-demos/python-project
+spec:
+  type: other
+  lifecycle: unknown
+  owner: pm
