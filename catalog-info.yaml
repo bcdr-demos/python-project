@@ -5,7 +5,7 @@ metadata:
 spec:
   type: other
   lifecycle: unknown
-  owner: pm
+  owner: pms
   coder:
     template: "devcontainers"
     createMode: "auto"
