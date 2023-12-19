@@ -7,8 +7,8 @@ spec:
   lifecycle: unknown
   owner: pms
   coder:
-    template: "devcontainers"
-    createMode: "auto"
+    templateName: "devcontainers"
+    mode: "auto"
     params:
       repo: "custom"
       custom_repo: "https://github.com/bcdr-demos/python-project"
