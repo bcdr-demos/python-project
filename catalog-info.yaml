@@ -2,6 +2,8 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: python-project
+  tags:
+  - devcontainer
 spec:
   type: other
   lifecycle: unknown
